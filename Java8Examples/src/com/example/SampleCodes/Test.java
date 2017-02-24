@@ -33,8 +33,10 @@ public class Test {
         	Colors currentState = mapKeySet.next();
             System.out.println("key : " + currentState + " value : " + map.get(currentState));
         }
-		System.out.println("********************************");
-		Map<Colors, String> mapEnum = new EnumMap<Colors, String>(Colors.class);
+        
+        System.out.println("********************************");
+        System.out.println("EnumMap will print items in order that it is declared in Enum");
+        Map<Colors, String> mapEnum = new EnumMap<Colors, String>(Colors.class);
 		mapEnum.put(Colors.BLACK, "Black");
 		mapEnum.put(Colors.RED, "Red");
 		mapEnum.put(Colors.BLUE, "Blue");
